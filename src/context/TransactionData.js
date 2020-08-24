@@ -29,7 +29,7 @@ export class TransactionDataProvider extends Component {
             console.log(userEmail);
             if(userEmail){
               console.log("I came here");
-              const res = await axios.get(` http://localhost:5000/api/v1/transactions?email=${userEmail}`)
+              const res = await axios.get(` https://afternoon-shelf-23667.herokuapp.com/api/v1/transactions?email=${userEmail}`)
               console.log("I came here too");
               const data  = res.data.data;
               
@@ -65,8 +65,7 @@ export class TransactionDataProvider extends Component {
         async deleteTransaction(id){
           try
           {
-            console.log(`http://localhost:5000/api/v1/transactions/${id}`);
-            const res = await axios.delete(`http://localhost:5000/api/v1/transactions/${id}`);
+            const res = await axios.delete(`https://afternoon-shelf-23667.herokuapp.com/api/v1/transactions/${id}`);
             console.log(res);
             const newTrans = this.state.transactions.filter(transaction => transaction._id !== id);
             console.log(newTrans)
@@ -94,7 +93,7 @@ export class TransactionDataProvider extends Component {
          }
          try
         {
-          const res = await axios.post('http://localhost:5000/api/v1/transactions', obj, config);
+          const res = await axios.post('https://afternoon-shelf-23667.herokuapp.com/api/v1/transactions', obj, config);
           // console.log(res);
           const newObj = res.data.data;
           this.setState({
