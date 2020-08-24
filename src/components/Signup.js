@@ -18,7 +18,7 @@ export default function Signup() {
         'Config-Type' : 'application/json'
       }
   
-      const res = await axios.post("http://localhost:5000/signup",obj, config);
+      const res = await axios.post("https://afternoon-shelf-23667.herokuapp.com/signup",obj, config);
     
      }
      catch(err){
