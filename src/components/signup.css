@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.Signup-container{
+  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: peachpuff !important;
+  font-family: 'Lato', sans-serif;
+  background-image: url("../signinback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.signup-form{
+   margin: 0 auto;
+   width: 30%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  

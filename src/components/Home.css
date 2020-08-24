@@ -1,0 +1,37 @@
+.home{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../bk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading{
+    white-space: nowrap;
+}
+
+
+
+.main-container{
+    background-color: bisque;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px !important;
+}
+
+
+/* .logo-img{
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+} */
+
+.impact{
+    color: cornsilk;
+    font-weight: bold;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 50px;
+    font-style: italic;
+
+}
